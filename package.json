@@ -1,6 +1,6 @@
 {
-  "name": "typed-endpoint",
-  "version": "0.9.0",
+  "name": "@marvinav/typed-express",
+  "version": "0.9.1",
   "description": "Simple expressjs routes generator based on strong types endpoint description",
   "main": "public/index.js",
   "scripts": {
@@ -18,6 +18,12 @@
     "nodejs",
     "fetch"
   ],
+  "files": [
+    "public",
+    "LICENSE",
+    "README.md"
+  ],
+  "types": "public/index.d.ts",
   "author": "marvinav",
   "license": "MIT",
   "bugs": {
