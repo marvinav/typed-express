@@ -58,9 +58,9 @@ export interface ErrorResponse {
 }
 
 /**
- * Supporter function to create meta 
- * @param meta 
- * @returns 
+ * Supporter function to create meta
+ * @param meta
+ * @returns
  */
 export function createEndpoint<
   Args extends BaseRequest,

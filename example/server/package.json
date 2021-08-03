@@ -1,7 +1,7 @@
 {
-  "name": "@marvinav/typed-express",
+  "name": "server",
   "version": "0.9.1",
-  "description": "Simple expressjs routes generator based on strong types endpoint description",
+  "description": "Simple expressjs server for example and test purpose",
   "main": "public/index.js",
   "scripts": {
     "build": "tsc",
@@ -11,25 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/marvinav/typed-endpoint.git"
   },
-  "keywords": [
-    "expressjs",
-    "typescript",
-    "browser",
-    "nodejs",
-    "fetch"
-  ],
-  "files": [
-    "public",
-    "LICENSE",
-    "README.md"
-  ],
-  "types": "public/index.d.ts",
   "author": "marvinav",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/marvinav/typed-endpoint/issues"
-  },
-  "homepage": "https://github.com/marvinav/typed-endpoint#readme",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/mocha": "^9.0.0",
@@ -42,5 +25,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@marvinav/typed-express": "file:../.."
   }
 }
