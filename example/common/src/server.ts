@@ -8,7 +8,8 @@ import {
   BaseController,
 } from "@marvinav/typed-express";
 
-type ServerEndpoint = ProtectedEndpoint | UnprotectedEndpoint;
+type ServerEndpoint = (ProtectedEndpoint | UnprotectedEndpoint) &
+  ({} | SpecialEndpoint);
 
 type ProtectedEndpoint = {
   _: "protected";
@@ -16,6 +17,10 @@ type ProtectedEndpoint = {
 
 type UnprotectedEndpoint = {
   _: "unprotected";
+};
+
+type SpecialEndpoint = {
+  special: "special";
 };
 
 export function createServerEndpoint<
